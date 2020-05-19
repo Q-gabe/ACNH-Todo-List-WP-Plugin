@@ -1,0 +1,25 @@
+{
+  "name": "acnh-todo-app",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@wpackio/scripts": "^4.4.1",
+    "less": "^3.11.1"
+  },
+  "scripts": {
+    "bootstrap": "wpackio-scripts bootstrap",
+    "build": "wpackio-scripts build",
+    "start": "wpackio-scripts start",
+    "archive": "wpackio-scripts pack"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^5.4.0",
+    "@wpackio/entrypoint": "^4.4.1",
+    "babel-cli": "^6.26.0",
+    "css-loader": "^3.5.3",
+    "less-loader": "^6.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "style-loader": "^1.2.1"
+  }
+}
