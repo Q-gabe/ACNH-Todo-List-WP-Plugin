@@ -1,6 +1,11 @@
 <h1 align="center">ACNH-Todo-List-WP-Plugin</h1>
 <p align="center">
 	<a href = "https://reactjs.org"><img src="https://img.shields.io/badge/Made with-React-23425C?logo=react"></a>
+    <a href = "https://reactjs.org"><img src="https://img.shields.io/badge/Made with-PHP-777BB4?logo=PHP"></a>
+    <a href = "https://reactjs.org"><img src="https://img.shields.io/badge/Made with-MySQL-4479A1?logo=MySQL"></a>
+    <br>
+    <a href = "https://wordpress.com/"><img src="https://img.shields.io/badge/Made for-WordPress-21759B?logo=Wordpress"></a>
+    <a href = "https://wordpress.com/"><img src="https://img.shields.io/badge/Inspired by-ACNH-DDD4AB?logo=Nintendo Switch"></a>
 	<a href = "#"><img src="https://img.shields.io/badge/Powered by-Caffeine-6f4e37?logo=Buy-Me-A-Coffee"></a>
 </p>
 
@@ -46,29 +51,36 @@ An Animal Crossing: New Horizons (ACNH) themed to-do list as a WordPress plugin!
 If other settings in wpackio.server.js are not accurate for your deployment, update them as well.
 You can alternatively run delete _wpackio.server.js_ and run `npm run bootstrap` to automatically generate the file.
 
-### 3. Install all dependencies
+### 3. Update *src/api/apiRoutes.js* API route path
+```
+    export const todosRoute = "http://<SERVER_ADDRESS>/<YOUR_WORDPRESS_NAME>/?rest_route=/acnh-todo-app/v1/todos";
+```
+Update the `todosRoute` constant in *src/api/apiRoutes.js* to ensure that the widget can sends HTTP requests to the correct route.
+(E.g. *http://localhost:8888/acnh_todos/?rest_route=/acnh-todo-app/v1/todos* ) 
+
+### 4. Install all dependencies
 In the plugins/**acnh-todo-app** folder, run the following command:
 ```
 npm install
 ```
 This will likely take a minute or two. :coffee:
 
-### 4. Build the webpack using wpackio
+### 5. Build the webpack using wpackio
 In the plugins/**acnh-todo-app** folder, run the following command:
 ```
 npm run build
 ```
 This will generate a _dist/_ folder that contains the minified resources for the app.
 
-### 5. Activate the plugin in your admin dashboard
+### 6. Activate the plugin in your admin dashboard
 
-### 6. Add an empty `div` target for the plugin.
+### 7. Add an empty `div` target for the plugin.
 Using the block editor, add a Shortcode block where you want the todo app to live on your WP site. Add the following HTML code into the block.
 ```
 <div id="acnh-todo"></div>
 ```
 
-### 7. Save changes, navigate to the page and enjoy! (:
+### 8. Save changes, navigate to the page and enjoy! (:
 
 ## Documentation :book:
 
