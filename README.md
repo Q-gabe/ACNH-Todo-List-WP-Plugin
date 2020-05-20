@@ -35,7 +35,7 @@ An Animal Crossing: New Horizons (ACNH) themed to-do list as a WordPress plugin!
 	<img src="https://raw.githubusercontent.com/Q-gabe/ACNH-Todo-List-WP-Plugin/master/preview/animation.gif" width="500px">
 </div>
 <div align="center">
-	<span><b>Easily mark and edit entered to-do tasks.</b></span>
+	<span><b>Fully animated buttons!</b></span>
 </div>
 <br>
 
